@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אגוז-לי – ערכת האגוזים הראשונה שלי</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #FAF3E0;
+            color: #5A3E36;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .logo {
+            width: 100px;
+            margin: 10px;
+        }
+        .input-field {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: right;
+        }
+        .btn {
+            background-color: #E09E60;
+            color: white;
+            padding: 12px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            width: 90%;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #d08950;
+        }
+        .faq, .recommendations {
+            text-align: right;
+            padding: 10px;
+            margin-top: 20px;
+            background: #FFF5E1;
+            border-radius: 5px;
+        }
+        .qr-code {
+            width: 250px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="all-nuts-logo.png" alt="אגוז-לי לוגו" class="logo">
+        <h1>🌰 אגוז-לי – ערכת האגוזים הראשונה שלי</h1>
+        <p>ערכת טעימות של 6 חמאות אגוזים טבעיות, קלות ונוחות לשימוש.</p>
+
+        <h2>📩 מלאו את הפרטים לרכישה:</h2>
+        <form action="send_order_email.php" method="POST">
+            <input type="text" name="name" class="input-field" placeholder="שם מלא" required>
+            <input type="email" name="email" class="input-field" placeholder="אימייל" required>
+            <input type="text" name="address" class="input-field" placeholder="כתובת למשלוח" required>
+
+            <h3>🔵 תשלום ב-Bit</h3>
+            <p>📱 סרקו את הקוד עם אפליקציית Bit ושלחו תשלום</p>
+            <img src="bit-qr-code.png" alt="Bit QR Code" class="qr-code">
+            <p>או שלחו תשלום ידני למספר: <strong>054-650-0820</strong></p>
+
+            <button type="submit" class="btn">💳 שלח הזמנה</button>
+        </form>
+        
+        <div class="faq">
+            <h3>❓ שאלות נפוצות (FAQ)</h3>
+            <p><strong>איך להשתמש בערכה?</strong> – פשוט לפתוח ולתת לתינוק בהתאם להנחיות התזונה.</p>
+            <p><strong>מאיזה גיל אפשר להתחיל?</strong> – מגיל 6 חודשים ומעלה.</p>
+            <p><strong>האם כל האגוזים כלולים?</strong> – כן! הערכה מכילה 6 סוגים שונים.</p>
+        </div>
+
+        <div class="recommendations">
+            <h3>🌟 המלצות הורים</h3>
+            <p>📝 "מוצר מושלם! בדיוק מה שחיפשתי!" - אמא של יואב</p>
+            <p>📝 "עזר לנו מאוד בתהליך הטעימות!" - אבא של מיכל</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
